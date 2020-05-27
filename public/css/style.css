@@ -317,6 +317,27 @@ p{
     font-weight: 400;
 }
 
+.post-content{
+    padding:1rem 0;
+}
+.popular-post h2{
+    padding-top: 8rem;
+}
+
+.post-info{
+    padding: .4rem .1rem !important;
+    bottom:.2rem !important;
+    left: 1.6rem !important;
+    border-radius: 0rem !important;
+    background: white !important;
+}
+
+.post-title a{
+    font-size: 1rem;
+}
+
+
+
 
 
 
