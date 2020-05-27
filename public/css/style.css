@@ -59,6 +59,12 @@ button.btn{
 .container{
     margin: 0 5vw;
 }
+.text-gray{
+    color: var(--text-gray);
+}
+p{
+    color: var(--text-light);
+}
 
 
 
@@ -227,6 +233,93 @@ button.btn{
     background:transparent;
     font-size: 2rem;
 }
+
+
+.site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+.post-content{
+    width: 100%;
+    /* margin-bottom: 5rem; */
+}
+
+.post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+.post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 20vw;
+    border-radius: 30px;
+}
+.post-image > div{
+    overflow: hidden;
+}
+
+.post-image .img{
+    width: 100%;
+    transition: 2s ease;
+}
+
+.post-image .img:hover{
+    transform: scale(1.5);
+}
+
+.post-info span{
+    margin: 0 0.5rem ;
+}
+
+.post-title a {
+    font-size: 1.5rem;
+}
+.post-title .post-btn{
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+.pagination{
+    justify-content: center;
+    color:var(--text-gray);
+    margin: 4rem 0;
+}
+
+.pagination a{
+    border-radius: 2rem;
+    padding:10px 15px ;
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+.pages{
+    background: var(--text-gray);
+    color: white;
+}
+
+.list-items{
+    background: var(--sky);
+    padding: 1rem  ;
+    margin: 0.8rem 0;
+    border-radius: 2.4rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-items a{
+    color: black;
+    font-weight: 400;
+}
+
+
+
+
 
 
 
