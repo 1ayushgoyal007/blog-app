@@ -106,7 +106,7 @@ p{
 
 .toggle-icons i{
     font-size: 1.4rem;
-    padding-right: 20px;
+    padding:0;
     color: var(--text-gray);
 }
 
@@ -371,6 +371,7 @@ p{
 
 .popular-tags{
     padding: 4rem 0;
+    display: none;
 }
 
 .tag{
@@ -447,6 +448,29 @@ p{
 
 /* Media Queries */
 
+@media only screen and (max-device-width:1024px){
+    .popular-post .post-info{
+        display: none;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer .container > div{
+        padding: 1rem ;
+    }
+    .nav .toggle-collapse{
+        width: 91%;
+    }
+ .site-content aside    .popular-tags{
+        display: none;
+    }
+}
+
+
+
+
 @media only screen and (max-device-width:767px){
     .nav .nav-menu , .nav-items {
         flex-direction: column;
@@ -454,6 +478,14 @@ p{
 
     .nav .toggle-collapse{
         display: initial;
+    }
+
+    .site-content{
+        grid-template-columns: 100%;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
